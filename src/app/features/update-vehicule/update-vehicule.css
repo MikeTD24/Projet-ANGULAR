@@ -1,0 +1,48 @@
+:host {
+  display: block;
+  padding: 2rem;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+  padding: 1.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: -0.6rem;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.65rem;
+  border: 1px solid #9ca3af;
+  border-radius: 4px;
+  font: inherit;
+}
+
+input:focus {
+  outline: 2px solid #2563eb;
+  border-color: #2563eb;
+}
+
+button {
+  width: fit-content;
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 4px;
+  background-color: #2563eb;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}

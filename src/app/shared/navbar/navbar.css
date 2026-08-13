@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #1f2937;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover,
+a.active {
+  color: #60a5fa;
+}

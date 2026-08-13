@@ -1,0 +1,16 @@
+<h4>List vehicule</h4>
+
+<ul>
+
+    @for (c of listCars(); track $index){
+        <li>
+            <h4>{{c.brand}}</h4>
+            <p>puissance : {{c.puissance}}</p>
+            <p>color : {{c.color}}</p>
+            <img [src]="c.imageUrl" [alt]="c.brand" width="200">
+            <button (click)="navigateToDetails(c.id)">Details</button>
+            <button (click)="navigateToUpdate(c.id)">Modifier</button>
+            <button (click)="deleteCar(c.id)">Delete</button>
+        </li>
+    }
+</ul>

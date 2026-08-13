@@ -1,0 +1,16 @@
+<h1>Détails du véhicule</h1>
+
+@if (car) {
+  <article class="car-details">
+    <img [src]="car.imageUrl" [alt]="car.brand" />
+
+    <div>
+      <h2>{{ car.brand }}</h2>
+      <p><strong>Identifiant :</strong> {{ car.id }}</p>
+      <p><strong>Couleur :</strong> {{ car.color }}</p>
+      <p><strong>Puissance :</strong> {{ car.puissance }} ch</p>
+    </div>
+  </article>
+} @else {
+  <p>Véhicule indisponible.</p>
+}

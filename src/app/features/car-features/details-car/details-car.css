@@ -1,0 +1,20 @@
+.car-details {
+  display: grid;
+  grid-template-columns: minmax(0, 500px) 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 1.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+}
+
+.car-details img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 700px) {
+  .car-details {
+    grid-template-columns: 1fr;
+  }
+}

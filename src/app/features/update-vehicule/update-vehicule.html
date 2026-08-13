@@ -1,0 +1,17 @@
+<h1>Modifier une voiture</h1>
+
+<form [formGroup]="carForm" (ngSubmit)="updateCar()">
+  <label for="brand">Marque</label>
+  <input id="brand" type="text" formControlName="brand" />
+
+  <label for="color">Couleur</label>
+  <input id="color" type="text" formControlName="color" />
+
+  <label for="puissance">Puissance (ch)</label>
+  <input id="puissance" type="number" formControlName="puissance" />
+
+  <label for="imageUrl">URL de l'image</label>
+  <input id="imageUrl" type="url" formControlName="imageUrl" />
+
+  <button type="submit">Enregistrer les modifications</button>
+</form>
